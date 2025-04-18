@@ -3,26 +3,37 @@
 int main () {
     int dia;
 
-    printf("Entre o valor do dia (1 a 7):\n");
-    scanf("%d", &dia);
+    printf("Entre o valor do dia!\n");
+    scanf("%d" , &dia);
 
-    if (dia == 1){
+    switch (dia)
+    {
+    case 1:
         printf("Domingo\n");
-    } else if (dia == 2) {
-        printf("Segunda-feira\n");
-    } else if (dia == 3) {
-        printf("Terça-feira\n");
-    } else if (dia == 4){
-        printf("Quarta-feira\n");
-    } else if (dia == 5){
-        printf("Quinta-feira\n");
-    } else if (dia == 6){
-        printf("Sexta-feira\n");
-    } else if (dia == 7){
-        printf("Sábado\n");
-    } else {
-        printf("Dia inválido!\n");
+        break;
+    
+    case 2:
+        printf("Segunda feira\n");
+        break;
+    case 3: 
+        printf("Terça feira\n");
+        case 4:
+        printf("Quarta feira\n");
+        break;
+    case 5: 
+        printf("Quinta feira\n");
+        break;
+    case 6: 
+        printf("Sexta feira\n");
+        break;
+    case 7:
+        printf("Sabado feira\n");
+        break;
+ default:
+            printf("Valor inválido! Digite um número de 1 a 7.\n");
+            break;
     }
 
     return 0;
-}
+
+    }
